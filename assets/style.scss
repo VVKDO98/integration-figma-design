@@ -1,0 +1,143 @@
+$color-button : #F78065;
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    line-height: 1.2;
+}
+  
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,h2,h3{font-family: 'Merriweather', serif;}
+
+  
+.navbar {
+    position: absolute;
+    padding: 40px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    box-sizing: border-box;
+    .logo{
+        width: 32px;
+        height: 32px;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        border-radius: 50px;
+        background-color: #ffffff;
+        .img:first-child{
+            margin-right: 15px;
+        }
+    }
+}
+  
+header {
+    height: 600px;
+    width: 100vw;
+    background-image: url(/integration-figma-design/assets/img/women.png);
+    background-size: cover;
+    .cta{
+       width: 740px;
+       height: 540px;
+       background-color: #ffffff;
+       position: absolute;
+       bottom: 0px;
+       margin-left: 100px;
+       filter: drop-shadow(0px 7px 100px rgba(0, 0, 0, 0.1));
+       .cta-content{
+        height: 100%;
+        width: 100%;
+        padding: 90px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        box-sizing: border-box;
+        h1{font-size: 39px;}
+        p{font-size: 20px;}
+        a{
+            width: 250px;
+            height: 65px;
+            background-color: $color-button;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+       }
+    }
+}
+
+.card-main{
+    width: 85%;
+    margin: 400px auto 240px auto;
+    display: flex;
+    justify-content: space-between;
+    .card{
+        margin: 40px;
+        width: 33%;
+        .card-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            img{
+                margin-bottom: 60px;
+                height: 180x;
+            }
+            h3{font-size: 24px;}
+
+            p{
+                color: rgba(0, 0, 0, 0.5);
+                font-size: 16px;
+            }
+            h4{font-size: 18px; color: $color-button;}
+            h3,p{margin-bottom: 30px;}
+        }
+    }
+}
+
+.facility-main{
+    width: 85%;
+    margin: 0 auto 240px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    h2{
+        width: 100%;
+        margin-bottom: 100px;
+        font-size: 36px;
+    }
+    .facility-card{
+        width: 25%;
+        .facility-content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px;
+            img{
+                margin-bottom: 60px;
+            }
+            h3{font-size: 22px;}
+            h4{font-size: 18px; color: $color-button;}
+            h3,p{margin-bottom: 30px;}
+        }
+    }
+}
+
+footer{
+    height: 500px;
+    width: 100%;
+    background-color: #F7F7F7;
+}
