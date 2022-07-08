@@ -92,6 +92,9 @@ header .cta .cta-content a {
   font-weight: 600;
   color: #ffffff;
 }
+header .cta .cta-content a:hover {
+  background-color: #C46651;
+}
 
 .card-main {
   width: 85%;
@@ -120,9 +123,13 @@ header .cta .cta-content a {
   color: rgba(0, 0, 0, 0.5);
   font-size: 16px;
 }
-.card-main .card .card-content h4 {
+.card-main .card .card-content a {
   font-size: 18px;
+  font-weight: bold;
   color: #F78065;
+}
+.card-main .card .card-content a:hover {
+  color: #C46651;
 }
 .card-main .card .card-content h3, .card-main .card .card-content p {
   margin-bottom: 30px;
@@ -148,6 +155,7 @@ header .cta .cta-content a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
   padding: 10px;
 }
 .facility-main .facility-card .facility-content img {
@@ -156,12 +164,68 @@ header .cta .cta-content a {
 .facility-main .facility-card .facility-content h3 {
   font-size: 22px;
 }
-.facility-main .facility-card .facility-content h4 {
+.facility-main .facility-card .facility-content a {
   font-size: 18px;
+  font-weight: bold;
   color: #F78065;
+}
+.facility-main .facility-card .facility-content a:hover {
+  color: #C46651;
 }
 .facility-main .facility-card .facility-content h3, .facility-main .facility-card .facility-content p {
   margin-bottom: 30px;
+}
+
+.community {
+  width: 85%;
+  margin: 0 auto 240px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.community .community-title {
+  width: 30%;
+  margin-right: 120px;
+}
+.community .community-title h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.community .community-title a {
+  width: 250px;
+  height: 65px;
+  margin-top: 30px;
+  background-color: #F78065;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.community .community-title a:hover {
+  background-color: #C46651;
+}
+.community .community-img {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.community .community-img h3 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+.community .community-img p {
+  font-size: 14px;
+  margin: 20px auto;
+}
+.community .community-img a {
+  font-size: 18px;
+  color: #F78065;
+}
+.community .community-img a:hover {
+  color: #C46651;
 }
 
 footer {
