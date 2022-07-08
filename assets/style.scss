@@ -14,6 +14,18 @@ body{
 
 h1,h2,h3{font-family: 'Merriweather', serif;}
 
+a{
+    color: #000;
+    &:hover{
+        color: $color-button;
+    }
+}
+
+hr{
+    width: 85%;
+    margin: 0px auto 30px auto;
+}
+
   
 .navbar {
     position: absolute;
@@ -137,12 +149,51 @@ header {
 }
 
 footer{
-    height: 500px;
-    width: 100%;
+
     background-color: #F7F7F7;
     .footer-top{
-        width: ;
-      display: flex;
-      flex-direction: row; 
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        padding: 100px;
+        .footer-title{
+            width: 30%;
+            h2{font-size: 24px; margin-bottom: 16px;}
+            p{font-size: 48px; font-family: 'Merriweather', serif;}
+        }
+        .footer-menu{
+            display: flex;
+            flex-direction: column;
+            margin-right: 30px;
+            h2{font-size: 24px; margin-bottom: 16px;}
+            a{margin-bottom: 16px;}
+        }
+        .footer-job{
+            display: flex;
+            flex-direction: column;
+            h2{font-size: 24px; margin-bottom: 16px;}
+            a{margin-bottom: 16px;}
+        }
+        .footer-assist{
+            display: flex;
+            flex-direction: column;
+            h2{font-size: 24px; margin-bottom: 16px;}
+            a{margin-bottom: 16px;}
+        }
+    }
+    .footer-bottom{
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 100px 50px 100px;
+        .footer-end-menu{
+            a{
+                margin-right: 48px;
+            }
+        }
     }
 }

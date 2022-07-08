@@ -14,6 +14,18 @@ h1, h2, h3 {
   font-family: "Merriweather", serif;
 }
 
+a {
+  color: #000;
+}
+a:hover {
+  color: #F78065;
+}
+
+hr {
+  width: 85%;
+  margin: 0px auto 30px auto;
+}
+
 .navbar {
   position: absolute;
   padding: 40px 120px;
@@ -41,7 +53,7 @@ h1, h2, h3 {
 
 header {
   height: 600px;
-  width: 100vw;
+  width: 100%;
   background-image: url(/integration-figma-design/assets/img/women.png);
   background-size: cover;
 }
@@ -153,11 +165,69 @@ header .cta .cta-content a {
 }
 
 footer {
-  height: 500px;
-  width: 100%;
   background-color: #F7F7F7;
 }
 footer .footer-top {
+  width: 85%;
+  margin: auto;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  padding: 100px;
+}
+footer .footer-top .footer-title {
+  width: 30%;
+}
+footer .footer-top .footer-title h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+footer .footer-top .footer-title p {
+  font-size: 48px;
+  font-family: "Merriweather", serif;
+}
+footer .footer-top .footer-menu {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+footer .footer-top .footer-menu h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+footer .footer-top .footer-menu a {
+  margin-bottom: 16px;
+}
+footer .footer-top .footer-job {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-top .footer-job h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+footer .footer-top .footer-job a {
+  margin-bottom: 16px;
+}
+footer .footer-top .footer-assist {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-top .footer-assist h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+footer .footer-top .footer-assist a {
+  margin-bottom: 16px;
+}
+footer .footer-bottom {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 100px 50px 100px;
+}
+footer .footer-bottom .footer-end-menu a {
+  margin-right: 48px;
 }/*# sourceMappingURL=style.css.map */
