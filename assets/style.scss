@@ -42,7 +42,7 @@ h1,h2,h3{font-family: 'Merriweather', serif;}
   
 header {
     height: 600px;
-    width: 100vw;
+    width: 100%;
     background-image: url(/integration-figma-design/assets/img/women.png);
     background-size: cover;
     .cta{
@@ -140,4 +140,9 @@ footer{
     height: 500px;
     width: 100%;
     background-color: #F7F7F7;
+    .footer-top{
+        width: ;
+      display: flex;
+      flex-direction: row; 
+    }
 }
