@@ -65,7 +65,8 @@ header {
   background-image: url(/integration-figma-design/assets/img/women.png);
   background-size: cover;
 }
-header .cta {
+
+.cta {
   width: 740px;
   height: 540px;
   background-color: #ffffff;
@@ -74,7 +75,7 @@ header .cta {
   margin-left: 100px;
   filter: drop-shadow(0px 7px 100px rgba(0, 0, 0, 0.1));
 }
-header .cta .cta-content {
+.cta .cta-content {
   height: 100%;
   width: 100%;
   padding: 90px 60px;
@@ -83,13 +84,13 @@ header .cta .cta-content {
   justify-content: space-around;
   box-sizing: border-box;
 }
-header .cta .cta-content h1 {
+.cta .cta-content h1 {
   font-size: 39px;
 }
-header .cta .cta-content p {
+.cta .cta-content p {
   font-size: 20px;
 }
-header .cta .cta-content a {
+.cta .cta-content a {
   width: 250px;
   height: 65px;
   background-color: #F78065;
@@ -100,7 +101,7 @@ header .cta .cta-content a {
   font-weight: 600;
   color: #ffffff;
 }
-header .cta .cta-content a:hover {
+.cta .cta-content a:hover {
   background-color: #C46651;
 }
 
@@ -321,4 +322,152 @@ footer .footer-bottom {
 }
 footer .footer-bottom .footer-end-menu a {
   margin-right: 48px;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 20px 40px;
+  }
+
+  header {
+    height: 300px;
+    width: 100%;
+    background-position: center;
+  }
+
+  .cta {
+    position: relative;
+    bottom: auto;
+    margin-left: 0;
+    margin-bottom: 120px;
+    width: 100%;
+    height: auto;
+  }
+  .cta .cta-content {
+    padding: 30px;
+  }
+  .cta .cta-content h1 {
+    font-size: 30px;
+  }
+  .cta .cta-content p {
+    font-size: 16px;
+  }
+  .cta .cta-content h1, .cta .cta-content p {
+    margin-bottom: 15px;
+  }
+  .cta .cta-content a {
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .card-main {
+    width: 100%;
+    margin: 0px 0px 120px 0px;
+  }
+  .card-main .card {
+    flex-wrap: wrap;
+  }
+  .card-main .card .card-content {
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  .card-main .card .card-content a {
+    position: relative;
+  }
+
+  .facility-main {
+    width: 100%;
+    margin-bottom: 120px;
+  }
+  .facility-main h2 {
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+  .facility-main .facility-card {
+    flex-wrap: wrap;
+  }
+  .facility-main .facility-card .facility-content {
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 50px;
+  }
+
+  .community {
+    width: 100%;
+    margin-bottom: 120px;
+    flex-wrap: wrap;
+  }
+  .community .community-title {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    padding: 30px;
+  }
+  .community .community-title a {
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .community .community-img {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .community .community-img .community-content {
+    width: 100%;
+    padding: 30px;
+  }
+  .community .community-img .community-content img {
+    width: 200px;
+  }
+
+  .advantages {
+    width: 100%;
+    margin-bottom: 120px;
+  }
+  .advantages h2 {
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  .advantages .advantages-card {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .advantages .advantages-card .advantages-card-content {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .footer-main .footer-top {
+    width: 100%;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .footer-main .footer-top .footer-title {
+    margin-bottom: 30px;
+  }
+  .footer-main .footer-top .footer-title h3 {
+    font-size: 16px;
+  }
+  .footer-main .footer-top .footer-title p {
+    font-size: 30px;
+  }
+  .footer-main .footer-top .footer-menu {
+    margin-bottom: 30px;
+  }
+  .footer-main .footer-top .footer-job {
+    margin-bottom: 30px;
+  }
+  .footer-main .footer-top .footer-assist {
+    margin-bottom: 30px;
+  }
+  .footer-main .footer-bottom {
+    width: 100%;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .footer-main .footer-bottom p {
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
