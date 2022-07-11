@@ -111,7 +111,6 @@ header {
                 height: 180x;
             }
             h3{font-size: 24px;}
-
             p{
                 color: rgba(0, 0, 0, 0.5);
                 font-size: 16px;
@@ -205,6 +204,28 @@ header {
             &:hover{
                 color: $color-hover;
             }
+        }
+    }
+}
+
+.advantages{
+    width: 85%;
+    margin: 0 auto 240px auto;
+    display: flex;
+    flex-direction: column;
+    h2{font-size: 36px; margin-bottom: 100px;}
+    &-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &-content{
+            width: 33%;
+            padding: 20px;
+            img,h3{
+                margin-bottom: 60px;
+            }
+            h3{font-size: 22px;}
+            p{font-size: 14px;}
         }
     }
 }
