@@ -54,8 +54,8 @@ hr{
         padding: 15px;
         border-radius: 50px;
         background-color: #ffffff;
-        .img:first-child{
-            margin-right: 15px;
+        img:first-child{
+            margin-right: 10px;
         }
     }
 }
@@ -285,6 +285,9 @@ footer{
         justify-content: space-between;
         padding: 0px 100px 50px 100px;
         .footer-end-menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
             a{
                 margin-right: 48px;
             }
@@ -294,9 +297,6 @@ footer{
 
 //Responsive
 @media screen and (max-width: 480px){
-    body{
-        width: 100%;
-    }
     .navbar{
         padding: 20px 40px;
     }
@@ -413,8 +413,17 @@ footer{
             }
         }
     }
+}
 
-/**@media screen and (min-width: 480px) and (max-width: 1024px){
+@media screen and (min-width: 481px) and (max-width: 1024px){
+    .navbar{
+        padding: 20px 40px;
+    }
+    header {
+        height: 500px;
+        width: 100%;
+        background-position: center;
+    }
     .cta{
         position: relative;
         bottom: auto;
@@ -422,6 +431,73 @@ footer{
         margin-bottom: 120px;
         width: 100%;
         height: auto;
+        .cta-content{
+            padding: 50px;
+            h1,p{margin-bottom: 15px;}
+        }
     }
-    
-}**/
+    .card-main{
+        width: 100%;
+        margin: 0px auto 120px auto;
+        .card{
+            width: 100%;
+            padding: 50px;
+            flex-wrap: nowrap;
+            .card-content{
+                width: 33%;
+                padding: 20px;
+                a{position: relative;}
+            }
+        }
+    }
+    .facility-main{
+        width: 100%;
+        margin: 0px auto 120px auto;
+        h2{margin-bottom: 50px; padding-left: 50px;}
+        .facility-card{
+            width: 100%;
+            padding: 50px;
+            flex-wrap: nowrap;
+            .facility-content{
+                width: 25%;
+            }
+        }
+    }
+    .community{
+        width: 100%;
+        margin: 0px auto 120px auto;
+        flex-direction: column;
+        .community-title{
+            width: 100%;
+            margin-right: 60px;
+            margin-bottom: 50px;
+            padding-left: 50px;
+        }
+        .community-img{
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+    .advantages{
+        width: 100%;
+        margin: 0px auto 120px auto;
+        h2{margin-bottom: 50px; padding-left: 50px;}
+       .advantages-card{
+            padding: 50px;
+            flex-wrap: nowrap;
+            .advantages-card-content{
+                width: 33%;
+            }
+       }
+    }
+    .footer-main{
+        width: 100%;
+        .footer-bottom{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p{margin-bottom: 20px;}
+        }
+    }
+}

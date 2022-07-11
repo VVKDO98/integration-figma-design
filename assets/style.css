@@ -55,8 +55,8 @@ hr {
   border-radius: 50px;
   background-color: #ffffff;
 }
-.navbar .menu .img:first-child {
-  margin-right: 15px;
+.navbar .menu img:first-child {
+  margin-right: 10px;
 }
 
 header {
@@ -320,15 +320,16 @@ footer .footer-bottom {
   justify-content: space-between;
   padding: 0px 100px 50px 100px;
 }
+footer .footer-bottom .footer-end-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 footer .footer-bottom .footer-end-menu a {
   margin-right: 48px;
 }
 
 @media screen and (max-width: 480px) {
-  body {
-    width: 100%;
-  }
-
   .navbar {
     padding: 20px 40px;
   }
@@ -476,44 +477,109 @@ footer .footer-bottom .footer-end-menu a {
   .footer-main .footer-bottom .footer-end-menu div {
     margin: 16px 30px;
   }
-
-  /**.footer-main{
-      width: 100%;
-      .footer-top{
-          width: 80%;
-          flex-direction: column;
-          .footer-title{
-              margin-bottom: 30px;
-              h3{font-size: 16px;}
-              p{font-size: 30px;}
-          }
-          .footer-menu{
-              margin-bottom: 30px;
-          }
-          .footer-job{
-              margin-bottom: 30px;
-          }
-          .footer-assist{
-              margin-bottom: 30px;
-          }
-      }
-      .footer-bottom{
-          width: 80%;
-          flex-direction: column;
-          padding: 0px;
-          margin: 30px;
-          p{margin-bottom: 30px;}
-      }
-  }**/
 }
-/**@media screen and (min-width: 480px) and (max-width: 1024px){
-    .cta{
-        position: relative;
-        bottom: auto;
-        margin-left: 0;
-        margin-bottom: 120px;
-        width: 100%;
-        height: auto;
-    }
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .navbar {
+    padding: 20px 40px;
+  }
 
-}**//*# sourceMappingURL=style.css.map */
+  header {
+    height: 500px;
+    width: 100%;
+    background-position: center;
+  }
+
+  .cta {
+    position: relative;
+    bottom: auto;
+    margin-left: 0;
+    margin-bottom: 120px;
+    width: 100%;
+    height: auto;
+  }
+  .cta .cta-content {
+    padding: 50px;
+  }
+  .cta .cta-content h1, .cta .cta-content p {
+    margin-bottom: 15px;
+  }
+
+  .card-main {
+    width: 100%;
+    margin: 0px auto 120px auto;
+  }
+  .card-main .card {
+    width: 100%;
+    padding: 50px;
+    flex-wrap: nowrap;
+  }
+  .card-main .card .card-content {
+    width: 33%;
+    padding: 20px;
+  }
+  .card-main .card .card-content a {
+    position: relative;
+  }
+
+  .facility-main {
+    width: 100%;
+    margin: 0px auto 120px auto;
+  }
+  .facility-main h2 {
+    margin-bottom: 50px;
+    padding-left: 50px;
+  }
+  .facility-main .facility-card {
+    width: 100%;
+    padding: 50px;
+    flex-wrap: nowrap;
+  }
+  .facility-main .facility-card .facility-content {
+    width: 25%;
+  }
+
+  .community {
+    width: 100%;
+    margin: 0px auto 120px auto;
+    flex-direction: column;
+  }
+  .community .community-title {
+    width: 100%;
+    margin-right: 60px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+  }
+  .community .community-img {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .advantages {
+    width: 100%;
+    margin: 0px auto 120px auto;
+  }
+  .advantages h2 {
+    margin-bottom: 50px;
+    padding-left: 50px;
+  }
+  .advantages .advantages-card {
+    padding: 50px;
+    flex-wrap: nowrap;
+  }
+  .advantages .advantages-card .advantages-card-content {
+    width: 33%;
+  }
+
+  .footer-main {
+    width: 100%;
+  }
+  .footer-main .footer-bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-main .footer-bottom p {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
