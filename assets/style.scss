@@ -13,6 +13,7 @@ $color-hover : #C46651;
   
 body{
     font-family: "Montserrat", sans-serif;
+
 }
 
 h1,h2,h3{font-family: 'Merriweather', serif;}
@@ -293,6 +294,9 @@ footer{
 
 //Responsive
 @media screen and (max-width: 480px){
+    body{
+        width: 100%;
+    }
     .navbar{
         padding: 20px 40px;
     }
@@ -380,28 +384,44 @@ footer{
         .footer-top{
             width: 100%;
             flex-direction: column;
-            padding: 30px;
+            padding: 0;
+            margin: 0;
             .footer-title{
-                margin-bottom: 30px;
-                h3{font-size: 16px;}
-                p{font-size: 30px;}
+                margin: 30px;
             }
             .footer-menu{
-                margin-bottom: 30px;
+                margin: 30px;
             }
             .footer-job{
-                margin-bottom: 30px;
+                margin: 30px;
             }
             .footer-assist{
-                margin-bottom: 30px;
+                margin: 30px;
             }
         }
         .footer-bottom{
             width: 100%;
             flex-direction: column;
-            padding: 30px;
-            p{margin-bottom: 30px;}
-            
+            padding: 0;
+            margin: 0;
+            p{margin: 30px;}
+            .footer-end-menu{
+                flex-direction: column;
+                div{
+                    margin: 16px 30px;
+                }
+            }
         }
     }
-}
+
+/**@media screen and (min-width: 480px) and (max-width: 1024px){
+    .cta{
+        position: relative;
+        bottom: auto;
+        margin-left: 0;
+        margin-bottom: 120px;
+        width: 100%;
+        height: auto;
+    }
+    
+}**/
